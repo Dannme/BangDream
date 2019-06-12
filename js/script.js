@@ -36,10 +36,7 @@ $(document).ready(function(){
 	$("#an_wrap>#open").delay(500).animate({
         top:100
     },1100,"easeOutBounce")
-    $("#an_wrap").delay(1900).animate({
-        delay:2.7,
-        top:1000
-    },700)
+    $("#an_wrap").delay(1900).animate({"top":"1000px"},700)
     $(document).keydown(function(event) {
         if (event.ctrlKey==true && (event.which == '61' || event.which == '107' || event.which == '173' || event.which == '109'  || event.which == '187'  || event.which == '189'  ) ) {
             event.preventDefault();
